@@ -5,8 +5,8 @@ on:
     branches:
       - master
   schedule:
-    # At 16:00 UTC every day
-    - cron: '0 16 * * *'
+    # Every 6 hours every day
+    - cron: '0 /6 * * *'
   repository_dispatch:
     types:
       - bump
