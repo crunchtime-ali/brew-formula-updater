@@ -1,0 +1,28 @@
+name: Bump
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    # At 16:00 UTC every day
+    - cron: '0 16 * * *'
+  repository_dispatch:
+    types:
+      - bump
+
+jobs:
+  bump:
+    strategy:
+      matrix:
+        formula:
+          - yaegi
+    continue-on-error: true
+    runs-on: macos-latest
+    steps:
+      - name: Bump formulae
+        uses: dawidd6/action-homebrew-bump-formula@v3
+        with:
+          token: ${{secrets.TOKEN}}
+          formula: ${{matrix.formula}}
+          livecheck: true
