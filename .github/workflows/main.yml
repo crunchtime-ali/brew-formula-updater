@@ -8,6 +8,11 @@ on:
     types:
       - bump-yaegi
       - bump-wabt
+      - bump-sqlite
+      - bump-micro
+      - bump-evince
+      - bump-jenkins
+      - bump-opa
 
 jobs:
   bump-yaegi:
@@ -44,7 +49,7 @@ jobs:
     strategy:
       matrix:
         formula:
-          - wabt
+          - sqlite
     continue-on-error: true
     runs-on: macos-latest
     steps:
@@ -59,7 +64,7 @@ jobs:
     strategy:
       matrix:
         formula:
-          - wabt
+          - micro
     continue-on-error: true
     runs-on: macos-latest
     steps:
@@ -69,4 +74,48 @@ jobs:
           token: ${{secrets.TOKEN}}
           formula: ${{matrix.formula}}
           livecheck: true
+
+  bump-evince:
+    strategy:
+      matrix:
+        formula:
+          - evince
+    continue-on-error: true
+    runs-on: macos-latest
+    steps:
+      - name: Bump formulae evince
+        uses: dawidd6/action-homebrew-bump-formula@v3
+        with:
+          token: ${{secrets.TOKEN}}
+          formula: ${{matrix.formula}}
+          livecheck: true         
           
+  bump-jenkins:
+    strategy:
+      matrix:
+        formula:
+          - jenkins
+    continue-on-error: true
+    runs-on: macos-latest
+    steps:
+      - name: Bump formulae jenkins
+        uses: dawidd6/action-homebrew-bump-formula@v3
+        with:
+          token: ${{secrets.TOKEN}}
+          formula: ${{matrix.formula}}
+          livecheck: true
+          
+  bump-opa:
+    strategy:
+      matrix:
+        formula:
+          - opa
+    continue-on-error: true
+    runs-on: macos-latest
+    steps:
+      - name: Bump formulae opa
+        uses: dawidd6/action-homebrew-bump-formula@v3
+        with:
+          token: ${{secrets.TOKEN}}
+          formula: ${{matrix.formula}}
+          livecheck: true
