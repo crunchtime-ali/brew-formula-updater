@@ -6,114 +6,24 @@ on:
     - cron: '0 */6 * * *'
   repository_dispatch:
     types:
-      - bump-yaegi
-      - bump-wabt
-      - bump-sqlite
-      - bump-micro
-      - bump-evince
-      - bump-jenkins
-      - bump-opa
+      - bump
 
 jobs:
-  bump-yaegi:
-    strategy:
-      matrix:
-        formula:
-          - yaegi
-    continue-on-error: true
-    runs-on: macos-latest
-    steps:
-      - name: Bump formulae
-        uses: dawidd6/action-homebrew-bump-formula@v3
-        with:
-          token: ${{secrets.TOKEN}}
-          formula: ${{matrix.formula}}
-          livecheck: true
-          
-  bump-wabt:
-    strategy:
-      matrix:
-        formula:
-          - wabt
-    continue-on-error: true
-    runs-on: macos-latest
-    steps:
-      - name: Bump formulae wabt
-        uses: dawidd6/action-homebrew-bump-formula@v3
-        with:
-          token: ${{secrets.TOKEN}}
-          formula: ${{matrix.formula}}
-          livecheck: true
-
-  bump-sqlite:
-    strategy:
-      matrix:
-        formula:
-          - sqlite
-    continue-on-error: true
-    runs-on: macos-latest
-    steps:
-      - name: Bump formulae sqlite
-        uses: dawidd6/action-homebrew-bump-formula@v3
-        with:
-          token: ${{secrets.TOKEN}}
-          formula: ${{matrix.formula}}
-          livecheck: true
-          
-  bump-micro:
-    strategy:
-      matrix:
-        formula:
-          - micro
-    continue-on-error: true
-    runs-on: macos-latest
-    steps:
-      - name: Bump formulae micro
-        uses: dawidd6/action-homebrew-bump-formula@v3
-        with:
-          token: ${{secrets.TOKEN}}
-          formula: ${{matrix.formula}}
-          livecheck: true
-
-  bump-evince:
+  bump:
     strategy:
       matrix:
         formula:
           - evince
-    continue-on-error: true
-    runs-on: macos-latest
-    steps:
-      - name: Bump formulae evince
-        uses: dawidd6/action-homebrew-bump-formula@v3
-        with:
-          token: ${{secrets.TOKEN}}
-          formula: ${{matrix.formula}}
-          livecheck: true         
-          
-  bump-jenkins:
-    strategy:
-      matrix:
-        formula:
           - jenkins
-    continue-on-error: true
-    runs-on: macos-latest
-    steps:
-      - name: Bump formulae jenkins
-        uses: dawidd6/action-homebrew-bump-formula@v3
-        with:
-          token: ${{secrets.TOKEN}}
-          formula: ${{matrix.formula}}
-          livecheck: true
-          
-  bump-opa:
-    strategy:
-      matrix:
-        formula:
+          - micro
           - opa
+          - sqlite
+          - yaegi
+          - wabt
     continue-on-error: true
     runs-on: macos-latest
     steps:
-      - name: Bump formulae opa
+      - name: Bump formulae
         uses: dawidd6/action-homebrew-bump-formula@v3
         with:
           token: ${{secrets.TOKEN}}
