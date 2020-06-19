@@ -3,7 +3,7 @@ name: Bump
 on:
   schedule:
     # Every 6 hours every day
-    - cron: '0 */6 * * *'
+    - cron: '0 */2 * * *'
   repository_dispatch:
     types:
       - bump
@@ -13,12 +13,28 @@ jobs:
     strategy:
       matrix:
         formula:
+          - apache-spark
+          - benthos
+          - confluent-platform
+          - contentful-cli
           - evince
+          - git-filter-repo
+          - jetty
+          - jetty-runner
+          - ffmpeg
+          - ilmbase
+          - inko
           - jenkins
           - micro
+          - newrelic-cli
           - opa
+          - openexr
+          - phpstan
           - sqlite
+          - sslyze
+          - stgit
           - yaegi
+          - youtube-dl
           - wabt
     continue-on-error: true
     runs-on: macos-latest
