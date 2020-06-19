@@ -38,4 +38,35 @@ jobs:
         with:
           token: ${{secrets.TOKEN}}
           formula: ${{matrix.formula}}
-          livecheck: true:
+          livecheck: true
+
+  bump-sqlite:
+    strategy:
+      matrix:
+        formula:
+          - wabt
+    continue-on-error: true
+    runs-on: macos-latest
+    steps:
+      - name: Bump formulae sqlite
+        uses: dawidd6/action-homebrew-bump-formula@v3
+        with:
+          token: ${{secrets.TOKEN}}
+          formula: ${{matrix.formula}}
+          livecheck: true
+          
+  bump-micro:
+    strategy:
+      matrix:
+        formula:
+          - wabt
+    continue-on-error: true
+    runs-on: macos-latest
+    steps:
+      - name: Bump formulae micro
+        uses: dawidd6/action-homebrew-bump-formula@v3
+        with:
+          token: ${{secrets.TOKEN}}
+          formula: ${{matrix.formula}}
+          livecheck: true
+          
