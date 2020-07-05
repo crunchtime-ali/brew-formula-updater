@@ -2,8 +2,8 @@ name: Bump
 
 on:
   schedule:
-    # Every 12 hours every day
-    - cron: '0 */12 * * *'
+    # Every 6 hours every day
+    - cron: '0 */6 * * *'
   repository_dispatch:
     types:
       - bump
@@ -14,26 +14,38 @@ jobs:
       matrix:
         formula:
           - angular-cli
+          - aws-cdk
           - apache-spark
+          - balena-cli
           - benthos
           - confluent-platform
           - contentful-cli
           - evince
+          - fastlane
+          - ffmpeg
           - git-filter-repo
+          - ios-webkit-debug-proxy
           - jetty
           - jetty-runner
-          - ffmpeg
           - ilmbase
           - inko
           - jenkins
+          - k9s
+          - librsvg
+          - metricbeat
           - micro
           - newrelic-cli
+          - node-build
           - opa
           - openexr
+          - ott
           - phpstan
+          - poppler
+          - salmon
           - sqlite
           - sslyze
           - stgit
+          - unnethack
           - yaegi
           - youtube-dl
           - wabt
