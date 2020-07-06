@@ -16,7 +16,6 @@ jobs:
           - angular-cli
           - aws-cdk
           - apache-spark
-          - balena-cli
           - benthos
           - confluent-platform
           - contentful-cli
