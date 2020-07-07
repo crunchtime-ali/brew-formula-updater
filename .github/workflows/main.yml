@@ -45,6 +45,7 @@ jobs:
           - sqlite
           - sslyze
           - stgit
+          - streamlink
           - unnethack
           - yaegi
           - youtube-dl
