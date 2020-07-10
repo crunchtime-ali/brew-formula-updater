@@ -41,15 +41,14 @@ jobs:
           - ott
           - phpstan
           - poppler
-          - salmon
           - sqlite
           - sslyze
           - stgit
           - streamlink
           - unnethack
+          - wabt
           - yaegi
           - youtube-dl
-          - wabt
     continue-on-error: true
     runs-on: macos-latest
     steps:
