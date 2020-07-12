@@ -23,6 +23,7 @@ jobs:
           - evince
           - fastlane
           - ffmpeg
+          - git-delta
           - git-filter-repo
           - ios-webkit-debug-proxy
           - jetty
