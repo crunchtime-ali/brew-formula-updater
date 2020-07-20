@@ -48,6 +48,7 @@ jobs:
           - streamlink
           - unnethack
           - wabt
+          - wxmaxima
           - yaegi
           - youtube-dl
     continue-on-error: true
