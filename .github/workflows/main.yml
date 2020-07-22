@@ -13,6 +13,7 @@ jobs:
     strategy:
       matrix:
         formula:
+          - act
           - angular-cli
           - aws-cdk
           - apache-spark
@@ -20,6 +21,7 @@ jobs:
           - benthos
           - confluent-platform
           - contentful-cli
+          - eksctl
           - evince
           - fastlane
           - ffmpeg
