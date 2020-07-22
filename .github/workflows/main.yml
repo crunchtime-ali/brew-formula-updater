@@ -30,6 +30,7 @@ jobs:
           - ios-webkit-debug-proxy
           - jetty
           - jetty-runner
+          - jo
           - ilmbase
           - inko
           - jenkins
