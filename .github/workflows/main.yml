@@ -15,6 +15,7 @@ jobs:
         formula:
           - act
           - angular-cli
+          - argo
           - aws-cdk
           - apache-spark
           - bats-core
