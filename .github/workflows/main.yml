@@ -29,6 +29,7 @@ jobs:
           - git-delta
           - git-filter-repo
           - ios-webkit-debug-proxy
+          - janet
           - jetty
           - jetty-runner
           - jo
