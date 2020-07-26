@@ -54,6 +54,7 @@ jobs:
           - wabt
           - wxmaxima
           - yaegi
+          - yj
           - youtube-dl
     continue-on-error: true
     runs-on: macos-latest
