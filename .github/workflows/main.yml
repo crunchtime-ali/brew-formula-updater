@@ -16,6 +16,7 @@ jobs:
           - act
           - angular-cli
           - argo
+          - argocd
           - aws-cdk
           - apache-spark
           - bats-core
@@ -46,6 +47,7 @@ jobs:
           - openexr
           - ott
           - phpstan
+          - podman
           - poppler
           - sqlite
           - sslyze
