@@ -21,7 +21,6 @@ jobs:
           - apache-spark
           - bats-core
           - benthos
-          - confluent-platform
           - contentful-cli
           - eksctl
           - evince
