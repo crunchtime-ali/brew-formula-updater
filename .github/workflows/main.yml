@@ -23,6 +23,7 @@ jobs:
           - benthos
           - bit-git
           - contentful-cli
+          - deno
           - eksctl
           - evince
           - fastlane
