@@ -4,68 +4,19 @@ on:
   schedule:
     # Every 6 hours every day
     - cron: '0 */6 * * *'
-  repository_dispatch:
-    types:
-      - bump
+  workflow_dispatch:
 
 jobs:
   bump:
-    strategy:
-      matrix:
-        formula:
-          - act
-          - angular-cli
-          - argo
-          - argocd
-          - aws-cdk
-          - apache-spark
-          - bats-core
-          - benthos
-          - bit-git
-          - contentful-cli
-          - deno
-          - eksctl
-          - evince
-          - fastlane
-          - ffmpeg
-          - git-delta
-          - git-filter-repo
-          - ios-webkit-debug-proxy
-          - janet
-          - jetty
-          - jetty-runner
-          - jo
-          - ilmbase
-          - inko
-          - jenkins
-          - k9s
-          - librsvg
-          - metricbeat
-          - micro
-          - newrelic-cli
-          - node-build
-          - opa
-          - openexr
-          - ott
-          - phpstan
-          - podman
-          - poppler
-          - sqlite
-          - sslyze
-          - stgit
-          - streamlink
-          - unnethack
-          - wabt
-          - wxmaxima
-          - yaegi
-          - yj
-          - youtube-dl
-    continue-on-error: true
     runs-on: macos-latest
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
       - name: Bump formulae
+        continue-on-error: true
+        env:
+          HOMEBREW_LIVECHECK_WATCHLIST: formulae
         uses: dawidd6/action-homebrew-bump-formula@v3
         with:
-          token: ${{secrets.TOKEN}}
-          formula: ${{matrix.formula}}
           livecheck: true
+          token: ${{secrets.TOKEN}}
