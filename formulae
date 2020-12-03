@@ -5,10 +5,13 @@ argocd
 aws-cdk
 apache-spark
 bats-core
+bitrise
+bgpstream
 benthos
 bit-git
 contentful-cli
 deno
+diamond
 eksctl
 evince
 fastlane
@@ -16,6 +19,7 @@ ffmpeg
 git-delta
 git-filter-repo
 ios-webkit-debug-proxy
+jack2
 janet
 jetty
 jetty-runner
@@ -24,6 +28,8 @@ ilmbase
 inko
 jenkins
 k9s
+kubecm
+kumactl
 librsvg
 metricbeat
 micro
@@ -35,10 +41,12 @@ ott
 phpstan
 podman
 poppler
+scw
 sqlite
 sslyze
 stgit
 streamlink
+swift-protobuf
 unnethack
 wabt
 wxmaxima
