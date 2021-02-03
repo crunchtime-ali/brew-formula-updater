@@ -16,7 +16,7 @@ jobs:
         continue-on-error: true
         env:
           HOMEBREW_LIVECHECK_WATCHLIST: formulae
-        uses: dawidd6/action-homebrew-bump-formula@v3
+        uses: dawidd6/action-homebrew-bump-formula@master
         with:
           livecheck: true
           token: ${{secrets.TOKEN}}
