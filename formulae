@@ -19,7 +19,6 @@ ffmpeg
 git-delta
 git-filter-repo
 ios-webkit-debug-proxy
-jack2
 janet
 jetty
 jetty-runner
