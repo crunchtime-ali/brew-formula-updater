@@ -1,54 +1,53 @@
-act
-angular-cli
-argo
-argocd
-aws-cdk
-apache-spark
-bats-core
-bitrise
-bgpstream
-benthos
-bit-git
-contentful-cli
-deno
-diamond
-eksctl
-evince
-fastlane
-ffmpeg
-git-delta
-git-filter-repo
-ios-webkit-debug-proxy
-janet
-jetty
-jetty-runner
-jo
-ilmbase
-inko
-jenkins
-k9s
-kubecm
-kumactl
-librsvg
-metricbeat
-micro
-newrelic-cli
-node-build
-opa
-openexr
-ott
-phpstan
-podman
-poppler
-scw
-sqlite
-sslyze
-stgit
-streamlink
-swift-protobuf
-unnethack
-wabt
-wxmaxima
-yaegi
-yj
-youtube-dl
+brew livecheck act
+brew livecheck angular-cli
+brew livecheck argo
+brew livecheck argocd
+brew livecheck aws-cdk
+brew livecheck apache-spark
+brew livecheck bats-core
+brew livecheck bitrise
+brew livecheck bgpstream
+brew livecheck benthos
+brew livecheck bit-git
+brew livecheck contentful-cli
+brew livecheck deno
+brew livecheck diamond
+brew livecheck eksctl
+brew livecheck evince
+brew livecheck fastlane
+brew livecheck ffmpeg
+brew livecheck git-delta
+brew livecheck git-filter-repo
+brew livecheck ios-webkit-debug-proxy
+brew livecheck janet
+brew livecheck jetty
+brew livecheck jetty-runner
+brew livecheck jo
+brew livecheck ilmbase
+brew livecheck inko
+brew livecheck jenkins
+brew livecheck k9s
+brew livecheck kubecm
+brew livecheck kumactl
+brew livecheck librsvg
+brew livecheck metricbeat
+brew livecheck micro
+brew livecheck newrelic-cli
+brew livecheck node-build
+brew livecheck opa
+brew livecheck openexr
+brew livecheck ott
+brew livecheck phpstan
+brew livecheck podman
+brew livecheck poppler
+brew livecheck scw
+brew livecheck sqlite
+brew livecheck stgit
+brew livecheck streamlink
+brew livecheck swift-protobuf
+brew livecheck unnethack
+brew livecheck wabt
+brew livecheck wxmaxima
+brew livecheck yaegi
+brew livecheck yj
+brew livecheck youtube-dl
