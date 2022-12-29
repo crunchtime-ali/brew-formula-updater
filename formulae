@@ -17,6 +17,7 @@ fastlane
 ffmpeg
 git-delta
 git-filter-repo
+handbrake
 ios-webkit-debug-proxy
 janet
 jetty
